@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King</title>
+    <link rel="icon" href="https://www.bk.com/favicon-16.png">
+    <style>
+        body{
+            background-color: rgb(248, 241, 231);
+        }
+        *{
+            margin:0px ;
+        }
+       #menubar{
+        background-color: rgb(248, 241, 231);
+        height: 50px;
+        width: 100%;
+        padding-top: 7px;
+        border-bottom: 1px solid rgb(204, 200, 200);
+        box-shadow: 2px 2px rgb(223, 220, 220);
+        position: fixed;
+       }
+        #menu{
+            height: 2px;
+            width: 20px;
+           background-color: rgb(11, 11, 11);
+          display: block;
+          margin-bottom: 4.5px;
+          margin-left: 10px;
+          margin-top: 3px;
+          }
+          #heading{
+            font-size: 30px;
+            color: rgb(106, 7, 7);
+            display: inline-block;
+            
+            margin-left: 10cm;
+            font-weight: 600;
+            font-family: "Ponnala", system-ui;
+          }
+          li{
+            display: inline-block; 
+          }
+          #profile{
+          width: 30px;
+          height: 30px;
+          margin-left: 7.5cm;
+          margin-bottom: 8px;
+          }
+          #view_cart{
+            padding: 10px;
+            margin-bottom: 10px;
+          
+            border-radius: 25px;
+            background-color: rgb(214, 35, 0);
+            border: none;
+            color: rgb(248, 241, 231);
+            width: 3cm;
+            margin-left: 0px;
+
+          }
+          #startorder{
+            color: #502314;
+            margin: 0px 60px;
+            font-size: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            color: rgb(80, 35, 20);
+            margin-left: 1cm;  
+          }
+          a{
+            text-decoration: none;
+            color: rgb(22, 7, 7);
+          }
+         #mainburger1{
+          height: 10cm;
+          width: 15cm;
+          
+          margin-top: 1.5cm;
+         }
+         #butt1{
+          width: 9cm;
+          background-color: rgb(214, 35, 0);
+          padding: 15px;
+          border: none;
+          border-radius: 30px;
+          margin-left: 1cm;
+          color: white;
+          font-size: 15px;
+          margin-top: 1cm;
+          }
+          #butt2{
+          width: 9cm;
+          background-color: rgb(249, 248, 248);
+          padding: 15px;
+          border: 1px solid black;
+          border-radius: 30px;
+          margin-left: 1cm;
+          color: rgb(80, 35, 20);
+          font-size: 15px;
+          }
+          #logo1{
+            margin-right: 10px;
+          }
+          #logo2{
+            margin-right: 10px;
+          }
+          .table{
+            margin-top: 10cm;
+          }
+          .bgr1{
+            width: 13cm;
+            height: 7cm;
+            border-radius: 10px;
+          }
+         .card1{
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 2px rgb(216, 212, 212);
+            height: 12cm;
+            background-color:white;
+            margin: 20px;
+            margin-left: 1cm;
+              }
+         .card2{
+           width:81%;
+           border-radius: 20px;
+           box-shadow: 2px 2px 2px 2px rgb(216, 212, 212);
+           margin-left: 1cm;
+           height: 12cm;
+           background-color:white;
+           margin: 20px;
+               }
+         .text1{
+           padding: 14px;
+
+         }
+         .btn2{
+              display: block;
+              right: 15px;
+              margin-left: 10cm;
+              color: rgb(80, 35, 20);
+              background-color: white;
+              border-radius: 15px;
+              padding: 8px;
+              border: 1px solid rgb(80, 35, 20);         
+         }
+         p{
+          margin-top: 10px;
+          color:rgb(80, 35, 20) ;
+          text-align: justify;
+         }
+         #footerlist{
+          background-color: rgb(248, 241, 231) ;
+          color: rgb(19, 17, 17);
+          padding: 10px 100px 10px 50px;
+          position: fixed;
+          bottom:0px;
+         }
+         .unorder2{
+          margin:15px 50px 5px 140px;
+          font-size: 20px;
+         }
+         
+         .p1{
+          background-color: rgb(147, 14, 14);
+          color: white;
+          padding: 15px;
+          text-align: center;
+          margin-bottom: 1.5cm;
+          font-size: 15px;
+         }
+    </style>  
+    <link href="https://fonts.googleapis.com/css2?family=Ponnala&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+</head>
+<body>
+       <nav id="menubar">
+           <ul id="unorder" type="none">
+            <li >
+                <div id="menu"></div>
+                <div id="menu"></div>
+                <div id="menu"> </div>   
+           </li>
+           <li>
+            <span id="heading">BURGER KING </span>
+           </li>
+           <li>
+           <i class="fa-solid fa-user" id="profile" ></i>
+           </li>
+           <li>
+            <button id="view_cart"><i class="fa-solid fa-bag-shopping"></i>  view cart</button>
+           </li>
+           </ul>  
+        </nav>
+            <table id="">
+              <tr>
+                  <td><h1 id="startorder">Start your BK® order.</h1>
+                     <a href="">
+                       <button class=" button2" id="butt1"><i class="fa-regular fa-clipboard icon" id="logo1"></i>Order Pickup </button>
+                      </a>
+                      <br><br>
+                     <a href=""> 
+                      <button class="button2" id="butt2"> <i class="fa-solid fa-bicycle icon" id="logo2"></i>Order Delivery</button></a>
+                    </td>
+                  <td>
+                      <img id="mainburger1" src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/ff7de79e6d7db5ac5f2efd1921374d9865aeb03e-1512x850.png?w=900&q=90&fit=max&auto=format" alt="main burger" >
+                  </td>
+              </tr>
+               <tr id="row" >
+                  <td>
+                    <div class="card1">
+                  <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/05559a96f2617cd44b97f66df473b2a14ea5e331-2000x1000.png?w=1113&q=80&fit=max&auto=format" alt="" class="bgr1">
+                    <div class="text1">
+                  <h2>3 new flame-grilled Whopper® flavors.</h2>
+                  <p>From your Million Dollar Whopper® submissions, three fan-created Whopper® sandwiches made it to the grill. Try the Maple Bourbon BBQ, Fried Pickled Ranch, and Mexican Street Corn Whopper®. Available for a limited time at participating U.S. restaurants!</p>
+                 <div class="positionr_right">
+                  <button class="btn2">Order now</button>
+                  </div>
+                   </div>
+                </div>
+                </td>
+                <td>
+                  <div class="card2">
+                <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/92141979be1b67de714d5eeab3b3658df5c52dfd-800x400.jpg?w=1113&q=80&fit=max&auto=format" alt="" class="bgr1">
+                  <div class="text1">
+                <h1>Want 100 bonus Crowns?</h1>
+                <p>Which Million Dollar Whopper® contest finalist did you love most? Let us know to earn 100 bonus Crowns. See terms.</p>
+                <a href="https://www.bk.com">See Terms</a>
+                <button class="btn2">Order now</button>
+                 </div>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td >
+                  <div class="card1">
+                <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/4fe87851517babca64710ca781f4cd29d5efc1fa-1024x512.png?w=1113&q=80&fit=max&auto=format" alt="" class="bgr1">
+                  <div class="text1">
+                <h1>4 items, 3 choices—for $5!</h1>
+                <p>Your choice between a Whopper® Jr., Chicken Jr. or Bacon Cheeseburger—paired with Value Fries, 4 Pc. Chicken Nuggets and a Value Soft Drink. Get a $5 Your Way Meal, your way.</p>
+                <a href="https://www.bk.com">See Terms</a>
+                <button class="btn2">Order now</button>
+                 </div>
+              </div>
+              </td>
+              <td>
+                <div class="card2">
+              <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/2b60390402530831a1e97c98d699337a5eefad6c-2000x1000.png?w=1113&q=80&fit=max&auto=format" alt="" class="bgr1">
+                <div class="text1">
+              <h1>The tastiest deal of the week</h1>
+              <p>Today only! Get a great deal on the full-on flame-grilled flavor of a Whopper®. Order it your way in the BK® App.</p>
+              <a href="https://www.bk.com">See Terms</a>
+              <button class="btn2">order now</button>
+               </div>
+            </div>
+            </td>
+              </tr>
+          </table>
+          <footer>
+          <img id="img2"src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/da421b826216c29608a2694126a5095f17be8676-630x622.png?w=900&q=80&fit=max&auto=format" alt="last" >
+    
+<p class="p1">TM & Copyright 2024 Burger King Company LLC. All Rights Reserved. <u>Do Not Sell Or Share My Personal Information</u></p>
+<hr>
+<div id="footerlist">
+<ul >
+    <li class="unorder2"><a href=""><i class="fa-solid fa-house icon3"></i>home</a></li>
+    <li class="unorder2"><a href=""><i class="fa-solid fa-list icon3"></i>menu</a></li>
+    <li class="unorder2" ><a href=""><i class="fa-regular fa-sun icon3"></i>offers</a></li>
+    <li class="unorder2"><a href=""><i class="fa-solid fa-crown icon3"></i>rewards</a></li>
+</ul> 
+</div>
+</footer>
+       </body>
+      </html>
